@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style:none;
+        }
+        .box{
+            width: 600px;
+            height: 300px;
+            border:1px solid #666;
+        }
+        .list{
+            display:flex;
+            text-align:center;
+            line-height:50px;
+        }
+        .list li{
+            flex:1;
+        }
+        .list .bg{
+            background:#f0f
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul class="list">
+            <li class="bg">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+    </div>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('.list li').on('click',function(){.
+                $(this).addClass('bg').siblings().removeClass("bg");
+                var ind=$(this).index();
+                $('.main div').eq(ind).addClass("bt").siblings().removeClass("bt")
+            })
+        })
+    </script>
+</body>
+</html>
